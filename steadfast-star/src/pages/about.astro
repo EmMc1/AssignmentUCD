@@ -3,9 +3,29 @@ import Header from '../components/Header.astro';
 import '../styles/global.css';
 ---
 
+<html lang="en">
+  <head> 
+    <style>body {
+        font-family: Courier, sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        background-color: #032541;
+    }
+    
+    input {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    
+    .weather_description {
+        color: white;
+        margin-top: 2rem;
+    }  </style>
+  </head>
+   
 <Header />
-<h1> About</h1>
-
+<h1>What is the weather like today in...</h1>
 <input type="text" id="cityInput" name="cityInput" placeholder="Input City" />
 <button onclick="fetchWeather()">
     Submit
@@ -14,15 +34,6 @@ import '../styles/global.css';
 <h3 id="city"></h3>
 <div id="weather"></div>
 
-<script>
-    import "../scripts/script";
-</script>
+</body>
 
-<style>
-    h1 {
-      color: purple;
-      font-size: 4rem;
-    }
-    
-
-  </style>
+    <script>import "../scripts/script";</script>
