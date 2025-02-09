@@ -46,3 +46,5 @@ export async function fetchWeather() {
         cityInput.value = ''; // Clear the input field after the search
     }
 }
+
+import "../scripts/script.js"</script>

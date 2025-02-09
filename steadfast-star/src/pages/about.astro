@@ -7,7 +7,8 @@ import '../styles/global.css';
 
 <html lang="en">
   <head> 
-    <style>body {
+    <style>
+    body {
         font-family: Courier, sans-serif;
         text-align: center;
         color: white;
@@ -23,22 +24,25 @@ import '../styles/global.css';
     .weather_description {
         color: white;
         margin-top: 2rem;
-    }  </style>
+    }  
+    </style>
   </head>
+
+  <body>
    
 <Header />
 
 <h1>What is the weather like today in...</h1>
 <input type="text" id="cityInput" name="cityInput" placeholder="Input City" />
-<button onclick="fetchWeather()">
-    Submit
-</button>
+ <button>Submit</button>
+
 <h5 id="error"></h5>
 <h3 id="city"></h3>
 <div id="weather"></div>
 
-<script >
-import "../scripts/script2"</script>
+<script> import "../scripts/script.js" </script>
+
+
 </body>
 
 
