@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import '../styles/global.css';
+
+
 ---
 
 <html lang="en">
@@ -25,6 +27,7 @@ import '../styles/global.css';
   </head>
    
 <Header />
+
 <h1>What is the weather like today in...</h1>
 <input type="text" id="cityInput" name="cityInput" placeholder="Input City" />
 <button onclick="fetchWeather()">
@@ -34,6 +37,9 @@ import '../styles/global.css';
 <h3 id="city"></h3>
 <div id="weather"></div>
 
+<script >
+import "../scripts/script2"</script>
 </body>
 
-    <script>import "../scripts/script";</script>
+
+    

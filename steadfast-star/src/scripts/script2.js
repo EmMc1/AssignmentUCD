@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", async function () {
 const apiKey = 'e634d5e076ad0902af407be6dcb6639d'; // API key - No curly braces!
 const weatherContainer = document.getElementById("weather");
 const cityDisplay = document.getElementById("city"); // Better name than just "city"
@@ -6,9 +5,9 @@ const errorDisplay = document.getElementById('error');
 const cityInput = document.getElementById('cityInput'); // Get the input field
 
 const units = 'metric'; // Can be 'imperial' or 'metric'
-const temperatureSymbol = units === 'imperial' ? "°F" : "°C"; // Use === for comparison
+const temperatureSymbol = units === 'imperial' ? "°F" : "°C";
 
-async function fetchWeather() {
+export async function fetchWeather() {
     try {
         weatherContainer.innerHTML = ''; // Clear previous data
         errorDisplay.innerHTML = '';      // Clear previous errors
@@ -46,34 +45,4 @@ async function fetchWeather() {
     } finally {
         cityInput.value = ''; // Clear the input field after the search
     }
-}
-
-})
-
-function convertToLocalTime(dt) {
-    const date = new Date(dt * 1000);
-    const options = { 
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true // Use 12-hour format
-    };
-    return date.toLocaleString('en-US', options); // Localized date string
-}
-
-function createWeatherDescription(weatherData) {
-    const { main, dt, weather } = weatherData; // Include weather object for icon
-
-    const description = document.createElement("div");
-    const formattedTime = convertToLocalTime(dt);
-
-    description.innerHTML = `
-        <div class="weather_description">
-            ${main.temp}${temperatureSymbol} - ${formattedTime.slice(11)} - ${formattedTime.slice(0, 10)} 
-            <img src="https://openweathermap.org/img/w/${weather[0].icon}.png" alt="Weather Icon"> </div>
-    `;
-    return description;
 }
