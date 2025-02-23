@@ -47,4 +47,3 @@ export async function fetchWeather() {
     }
 }
 
-import "../scripts/script.js"</script>
