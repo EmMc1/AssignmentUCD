@@ -72,6 +72,71 @@ html, body {
   
     .hamburger {
         display: none;
+        background:#ff8b76;
       }
   } 
 
+.container {
+display: flex;
+background-color: #34b7eb;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.card{ 
+  background-color: #eb5234;
+  width: 320px;
+  height: 400px;
+  margin: 30px;
+}
+
+.card-image {
+  background-color: azure;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+
+.weather1 {
+  background-image: url('/public/weather1.png'); /* Path to your local image */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 200px; /* Set the height for the div if needed */
+}
+
+.weather2{
+  background-image: url('public/weather2.jpg') ;
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 200px; /* Set the height for the div if needed */
+}
+
+.weather3{
+  background-image: url('public/weather3.jpg');
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 200px; /* Set the height for the div if needed */
+
+}
+
+.card a {
+
+  color: black;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: #b35545;
+  color: black;
+  cursor: pointer;
+  transform: scale (1.03) ;
+  transition: all 1s ease;
+}

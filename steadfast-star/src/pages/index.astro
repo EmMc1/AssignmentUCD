@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 
 ---
 
@@ -24,17 +25,41 @@ import '../styles/global.css';
     <section id="intro">
       <div class="row">
         <div class="col p-3 bg-primary text-white"><h2>About us</h2><div> <p class="lead">Welcome to Check the Weather. My name is Emma and I am a  primary school teacher. I have always had an interest in technology and how it can be used in Education to benefit students learning outcomes. Last year I began a course with UCD's Professional Academy called Front End Web Development. As part of my final assignment I had to design a website incorporating all the skills I had learned over the course. </p> <p class="lead" > In thinking about what would be the focus of my website I thought about how interested my students are in places all over the world.They love learning about new places and so I  decided to create a resource for primary school students to research the weather of different cities around the world.This website provides information in three hour long blocks on the weather check page.</p>On my education page I have created a resouces of a bank of ideas for teachers of activites and links using this website  that could be used to connect to other curricular areas. 
-        <div><img src="/public/pic2.jpg" class="img-fluid" width="150" height="70" alt="Emma"></div> <p>
-          I would love to hear how students are using this website so please send me a message on how "Check the weather" is being used in your classroom.</p>  </div> 
+        <div><img src="/public/pic2.jpg" class="img-fluid" width="150" height="70" alt="Emma"></div> 
+            </div> 
         </div>
         <div class="col p-3 bg-dark text-white"><img src="/public/pic1.jpg" class="img-fluid img-thumbnail" alt="children working"></div>
       </div>
     </div>
-    
     </section>
 
+    <section class="container">
+      <div class="card">
+        <div class="card-image weather1"></div>
+        <h2>Why weather forecasts are important</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magni eius tenetur quisquam provident laudantium, explicabo veniam illo, dicta quis, consequatur minus enim doloremque. Consequatur omnis sunt error impedit neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum perferendis quasi dignissimos deserunt tenetur? Consequuntur id quisquam vero, natus repudiandae accusantium minima ex minus! Vel velit illum fuga dolorum ab?</p>
+        <a href="#" class="btn btn-info" role="button">Read More</a>
+      </div>
 
-    
+      <div class="card">
+        <div class="card-image weather2"></div>
+        <h2>How weather data is collected</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nobis praesentium a nostrum esse provident repudiandae numquam adipisci nulla vel assumenda necessitatibus eum aliquid, velit obcaecati architecto iusto perferendis tempore?</p>
+        <a href="#" class="btn btn-info" role="button">Read More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-image weather3"></div>
+        <h2>Weather around the world </h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem molestias modi fuga temporibus, natus enim ab maxime quisquam aliquid magni. Iure fuga eaque deserunt voluptatum quaerat ipsa a assumenda minus!</p>
+        <a href="#" class="btn btn-info" role="button">Read More </a>
+      </div>
+
+    </section>
+  
+
+
+    <Footer />
    
   </body>
   <script>
