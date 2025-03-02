@@ -156,3 +156,45 @@ flex-wrap: wrap;
   display: none;
   margin-top: 10px;
 }
+
+.footer {
+  background-color: white;  /* White background for the footer */
+  border-top: 4px solid lightblue;  /* Light blue border on top */
+  padding: 20px 0; /* Adjust the padding for proper spacing */
+  width: 100%
+ 
+}
+
+.card.border-primary {
+  border-color: lightblue !important;  /* Light blue border for the card */
+}
+
+.card-body {
+  font-size: 2rem;  /* Slightly larger text for better readability */
+  color: #007bff;  /* Blue text color */
+}
+
+.footer p {
+  font-weight: bold;
+  color: #007bff;  /* Accent blue text color */
+  margin-bottom: 1;
+}
+
+.footer .card-body {
+  background-color: white;  /* White background for the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow for depth */
+}
+
+/* Add padding and margin to ensure spacing */
+.footer .card {
+  margin: 0;
+  padding: 20px;
+}
+
+/* Optional: Styling for social media links if added */
+.footer .btn {
+  color: #007bff;  /* Blue text for the buttons */
+  border-color: #007bff;  /* Blue border for the buttons */
+}
+
+

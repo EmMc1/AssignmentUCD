@@ -1,19 +1,32 @@
 ---
 import Header from '../components/Header.astro';
 import '../styles/global.css';
-
-
+import Footer from '../components/Footer.astro';
 ---
-
 <html lang="en">
-  <head> 
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Weather Website</title>
+  </head>
+  <Header />
+
+  <div class="container- pt-5 justify-content-center align-items-center pt-5 bg-primary text-white">
+    <h1> Check the Weather </h1>
+    </div>
+
+
     <style>
     body {
-        font-family: Courier, sans-serif;
+        font-family: sans-serif;
         text-align: center;
         color: white;
         font-size: 32px;
-        background-color: #032541;
+        background-color: #6fa6ed
+;
     }
     
     input {
@@ -30,7 +43,7 @@ import '../styles/global.css';
 
   <body>
    
-<Header />
+
 
 
 <h1>What is the weather like today in...</h1>
@@ -43,8 +56,5 @@ import '../styles/global.css';
 
 <script> import "../scripts/script.js" </script>
 
-
+<Footer />
 </body>
-
-
-    
