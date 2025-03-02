@@ -87,7 +87,7 @@ flex-wrap: wrap;
 .card{ 
   background-color: #eb5234;
   width: 320px;
-  height: 400px;
+  height: 600px;
   margin: 30px;
 }
 
@@ -139,4 +139,20 @@ flex-wrap: wrap;
   cursor: pointer;
   transform: scale (1.03) ;
   transition: all 1s ease;
+}
+
+.list-group {
+  background-color: #eb5234; /* Set the list background color to match the card */
+}
+
+/* Style the individual list items */
+.list-group-item {
+  background-color: #eb5234; /* Set the background of each item to match the card */
+  color: black;
+  border: none; /* Remove the borders from list items */
+}
+
+.more-text {
+  display: none;
+  margin-top: 10px;
 }
