@@ -4,7 +4,7 @@ html, body {
   }
 
 
- /* nav styles */
+ /* Hamburger menu styles */
  .hamburger {
     padding-right: 20px;
     cursor: pointer;
@@ -16,23 +16,27 @@ html, body {
     height: 10px;
     margin-bottom: 10px;
     background-color: #ff8b76;
-    text-align: center;
-    display: block;
+   
+  
   }
 
-  
+  /*Navigation styles */
 .nav-links {
     width: 100%;
     top: 40rem;
     left: 80px;
     background-color: #ff9776;
-    display: flex;
-    margin: 10;
+    display: none;
+    margin: 10px;
     background: white;
   
+}
+
+.nav-links.expanded {
+  display: flex; /*Show when expanded*/
+}
     
-    
-  }
+  
   
   .nav-links a {
     display: block;
@@ -52,7 +56,7 @@ html, body {
   .expanded {
     display: unset;
   }
-  
+
   @media screen and (min-width: 636px) {
     .nav-links {
       margin-left: 0em;
@@ -61,8 +65,8 @@ html, body {
       width: auto;
       background: white;
       padding: 10px 30px;
-      
-      
+    
+    
     }
   
     .nav-links a {

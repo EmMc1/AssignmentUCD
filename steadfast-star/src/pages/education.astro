@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,31 +14,31 @@ import Footer from '../components/Footer.astro';
     <title>Weather Website</title>
   </head>
 
-<Header />
+
 <body>
-<div class="container- pt-5 justify-content-center align-items-center pt-5 bg-primary text-white">
+    <Header />
+
+
+<section class="container- pt-5 justify-content-center align-items-center pt-5 bg-primary text-white">
     <h1> Check the Weather </h1>
    
-    </div>
+</section>
 
 
-    <div class="container">
+    <section class="container mt-5">
         <!-- Single top column that stretches across the page -->
-        <div class="row">
-          <div class="col-12">
-            <div class="top-column">
-              <h1>Why children should learn about the weather </h1>
-              <p>Teaching children about the  weather and climate can contribute to their development and environmental stewardship. <br>
+        <article>
+              <h2><strong>Why children should learn about the weather </strong></h2>
+              <p>Teaching children about the  weather and climate can contribute to their development and environmental stewardship as they learn about the relationship with changing weather patterns and the effects of global warming. <br> </p>
 
-                Building Scientific Curiosity
+               <p><strong> Building Scientific Curiosity</strong></p>
                 Introducing children to weather and climate ignites their natural curiosity about the world around them. They will build on the scientific skills of observation,  questioning, and  foster their scientific thinking and problem-solving skills. This early exposure can lay the foundation for future interests in science, technology, engineering, and mathematics (STEM). <br> 
                 
                 Weather and climate discussions also offer opportunities for critical thinking and analysis. Kids can explore the causes and effects of weather phenomena, helping them develop analytical skills and the ability to assess information critically.</p>
-            </div>
-          </div>
-        </div>
-    </div>
+        </article>
+    </section>
       
+
     <div class="container-fluid mt-3 education">
         <h2> <strong>Cross Curricular Ideas</strong></h2>
         <h3><b>Ideas to try out in your classroom.</b></h3>
@@ -50,8 +51,8 @@ import Footer from '../components/Footer.astro';
                 <li class="list-group-item">Graph the weather of an area on a chart using coordinates</li>
                 <li class="list-group-item">If the temperature got higher/lower by 5 degrees, what would the new temperature be?</li>
               </ul>
-        
-        </div>
+    </div>
+
           <div class="col p-3 bg-dark text-white"><h4>Literacy</h4>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Create weather forecasts based on the weather in which the children will  plan, write and edit a script to be performed.The children could film their weather segments also. </li>
@@ -64,7 +65,7 @@ import Footer from '../components/Footer.astro';
         
         
         </div>
-          <div class="col p-3 bg-primary text-white"><h4>SESE</h4>
+          <div class="col p-3 bg-primary text-white"><h4>Social, Environmental and Scientific Education</h4>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Research the tempeature variations in different countires e.g. Australia  Sydney and Perth and explore why</li>
                 <li class="list-group-item"> Create a project on a given country. </li>
@@ -74,7 +75,6 @@ import Footer from '../components/Footer.astro';
                 <li class="list-group-item">Compare weather data that they have researched to the weather in Ireland.  </li>
               </ul>
         </div>
-        
         </div>
       </div>
       
@@ -91,12 +91,18 @@ import Footer from '../components/Footer.astro';
       </div>
 
 
-
-   <div>
 <Footer />
 </div>
-</body>
+
+<script>
+    document.querySelector('.hamburger')?.addEventListener('click', () => {
+      document.querySelector('.nav-links')?.classList.toggle('expanded');
+    });
+  </script>
+ 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+</body>
+</html>
 
