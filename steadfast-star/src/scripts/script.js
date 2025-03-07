@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiKey = 'e634d5e076ad0902af407be6dcb6639d'; // API key - No curly braces!
+    const apiKey = 'e634d5e076ad0902af407be6dcb6639d'; // API key -
     const weatherContainer = document.getElementById("weather");
-    const cityDisplay = document.getElementById("city"); // Better name than just "city"
+    const cityDisplay = document.getElementById("city"); 
     const errorDisplay = document.getElementById('error');
     const cityInput = document.getElementById('cityInput'); // Get the input field
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             const cnt = 10; // Number of 3-hour forecast chunks to retrieve - can adjust
-            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}&cnt=${cnt}`; // Correct API URL
+            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}&cnt=${cnt}`; //  API URL
 
             const response = await fetch(apiUrl);
 

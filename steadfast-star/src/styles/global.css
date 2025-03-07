@@ -1,3 +1,4 @@
+/* background color and font*/
 html, body {
     background-color: lightblue;
     font-family: sans-serif;
@@ -6,10 +7,11 @@ html, body {
 
  /* Hamburger menu styles */
  .hamburger {
-    padding-right: 20px;
-    cursor: pointer;
+    padding-right: 20px;  
+    cursor: pointer; /* Curser changes to pointer when hovering over hamburger*/
   }
   
+  /* styling lines in hamburger menu*/
   .hamburger .line {
     display: block;
     width: 60px;
@@ -37,26 +39,29 @@ html, body {
 }
     
   
-  
+  /*Styling of individual navigation links*/
   .nav-links a {
     display: block;
     text-align: center;
-    padding: 10px, 20px ;
+    padding: 10px 20px ;
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
   }
   
+  /*Hover and focus styles for nav links*/
   .nav-links a:hover,
   .nav-links a:focus {
     background-color: #ff9776;
   }
   
+  /* to display properly when expanded*/
   .expanded {
     display: unset;
   }
 
+  /* Media query for screens with a minimum width of 636px*/
   @media screen and (min-width: 636px) {
     .nav-links {
       margin-left: 0em;
@@ -69,18 +74,21 @@ html, body {
     
     }
   
+    /* link styles for navigation  on larger screens*/
     .nav-links a {
       display: inline-block;
       padding: 15px 20px;
      
     }
   
+    /* Hamburger hidden on larger screens */
     .hamburger {
         display: none;
         background:#ff8b76;
       }
   } 
 
+  /* flexbox layout container*/
 .container {
 display: flex;
 background-color: #34b7eb;
@@ -89,6 +97,7 @@ flex-wrap: wrap;
 
 }
 
+/* card styles*/
 .card{ 
   background-color: #eb5234;
   width: 320px;
@@ -96,6 +105,7 @@ flex-wrap: wrap;
   margin: 30px;
 }
 
+/*Card Image styles*/
 .card-image {
   background-color: azure;
   height: 150px;
@@ -103,6 +113,7 @@ flex-wrap: wrap;
   background-size: cover;
 }
 
+/*Image 1 for card 1 */
 .weather1 {
   background-image: url('/public/weather1.png'); /* Path to your local image */
   background-size: cover; /* Ensures the image covers the container */
@@ -111,6 +122,7 @@ flex-wrap: wrap;
   height: 200px; /* Set the height for the div if needed */
 }
 
+/*Image 2 for card 2*/
 .weather2{
   background-image: url('public/weather2.jpg') ;
   background-size: cover; /* Ensures the image covers the container */
@@ -119,6 +131,7 @@ flex-wrap: wrap;
   height: 200px; /* Set the height for the div if needed */
 }
 
+/*Image 3 for card 3*/
 .weather3{
   background-image: url('public/weather3.jpg');
   background-size: cover; /* Ensures the image covers the container */
@@ -128,6 +141,7 @@ flex-wrap: wrap;
 
 }
 
+/*styles for card links*/
 .card a {
 
   color: black;
@@ -138,6 +152,7 @@ flex-wrap: wrap;
   text-decoration: none;
 }
 
+/*Hover effects*/
 .card:hover {
   background-color: #b35545;
   color: black;
@@ -146,6 +161,7 @@ flex-wrap: wrap;
   transition: all 1s ease;
 }
 
+/* List item styles */
 .list-group {
   background-color: #eb5234; /* Set the list background color to match the card */
 }
@@ -157,11 +173,13 @@ flex-wrap: wrap;
   border: none; /* Remove the borders from list items */
 }
 
+/*Extra text to be hidden initially*/
 .more-text {
   display: none;
   margin-top: 10px;
 }
 
+/*Footer styles */
 .footer {
   background-color: white;  /* White background for the footer */
   border-top: 4px solid lightblue;  /* Light blue border on top */
@@ -170,33 +188,36 @@ flex-wrap: wrap;
  
 }
 
+/* Card styles in the footer */
 .card.border-primary {
   border-color: lightblue !important;  /* Light blue border for the card */
 }
 
+/* Font styling for the card body */
 .card-body {
   font-size: 2rem;  /* Slightly larger text for better readability */
   color: #007bff;  /* Blue text color */
 }
 
+/*styling of text footer*/
 .footer p {
-  font-weight: bold;
-  color: #007bff;  /* Accent blue text color */
+  font-weight: bold;  /*bold font weight*/
+  color: #007bff;  /*blue text color */
   margin-bottom: 1;
 }
 
 .footer .card-body {
   background-color: white;  /* White background for the card */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* shadow for depth */
 }
 
-/* Add padding and margin to ensure spacing */
+/* Footer card  padding and margin to ensure spacing */
 .footer .card {
   margin: 0;
   padding: 20px;
 }
 
-/* Optional: Styling for social media links if added */
+/* Styling for social media links */
 .footer .btn {
   color: #007bff;  /* Blue text for the buttons */
   border-color: #007bff;  /* Blue border for the buttons */
