@@ -4,5 +4,5 @@ export default defineConfig({
   build: {
     outDir: './dist',
   },
-  base: 'AssignmentUCD/',
+  base: 'AssignmentUCD/steadfast-star',
 });
