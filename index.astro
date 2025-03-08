@@ -1,0 +1,168 @@
+---
+import Header from '../components/Header.astro'; /*Importing Header*/
+import '../styles/global.css'; /*Importing global CSS styling */
+import Footer from '../components/Footer.astro'; /* Importing Footer*/ 
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Weather Website</title>
+  </head>
+
+    <body>
+      <Header />   <!--Header at top of page, Navigation and Hamburger for mobile navigation included -->
+       
+      <!-- Main Heading -->
+    <div class="container- pt-5 justify-content-center align-items-center pt-5 bg-primary text-white"> <!--Importing of Bootstrap CSS for styling and layout -->
+        <h1> Check the Weather </h1>
+        </div>
+  
+    <!--About Section  -->
+    <section id="intro">
+      <div class="row">
+        <div class="col p-3 bg-primary text-white">
+          <h2>About us</h2>  <!--Section Heading -->
+          <div><p class="lead">Welcome to Check the Weather. My name is Emma and I am a primary school teacher. I have always had an interest in technology and how it can be used in Education to benefit students learning outcomes. Last year I began a course with UCD's Professional Academy called Front End Web Development. As part of my final assignment I had to design a website incorporating all the skills I had learned over the course. </p> <p class="lead" > In thinking about what would be the focus of my website I thought about how interested my students are in places all over the world.They love learning about new places and so I  decided to create a resource for primary school students to research the weather of different cities around the world.This website provides information in three hour long blocks on the weather check page.</p> <p class="lead">On my education page I have created a resouces of a bank of ideas for teachers of activites and links using this website  that could be used to connect to other curricular areas. </p> <!--Explaining concept of website  -->
+        <div><img src="/public/pic2.jpg" class="img-fluid" width="150" height="70" alt="Emma"></div> <!--Image showing children working on computers in school -->
+         </div> 
+        </div>
+        <div class="col p-3 bg-dark text-white"><img src="/public/pic1.jpg" class="img-fluid img-thumbnail" alt="children working"></div>
+      </div>
+    </div>
+    </section>
+
+    <!-- 3 Content sections in a container -->
+    <section class="container">
+      <div class="card">
+        <div class="card-image weather1"></div>
+        <h2>Why weather forecasts are important</h2>  <!--What is Meteorology -->
+        <p>The official name for the science of weather is Meteorology. It's the job of meteorologists to study weather patterns, and forecast (predict) weather and possible extreme weather.</p>
+
+          <div class="collapse" id="extraContent1">  <!--Hidden Content -->
+            <p>Weather is all around us. It's the condition of the atmosphere. From the clouds, rain and snow, to wind, thunder and sunshine, weather affects all aspects of life, so understanding the science behind it is really important. <br> Weather also includes pressure in the air, temperature and humidity.
+           Weather affects all parts of daily life. Therefore, it's important that we're able to track weather patterns and predict what weather we will experience and when. For example, poor weather conditions can lead to crop damage and flooding.</p>
+          </div>
+
+          <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#extraContent1" aria-expanded="false" aria-controls="extraContent" id="toggleButton">
+            Read More
+          </button>
+        </div>
+
+
+      <div class="card">
+        <div class="card-image weather2"></div>
+        <h2>How weather data is collected</h2>  <!--Weather Collection Instruments -->
+        <p>Meteorologists use different weather instruments to measure and record the weather. These instruments are usually located in weather stations placed around the country. Weather instruments are also located in the sea, on planes and within satellites. <br> </p>
+          
+        <div class="collapse" id="extraContent2">  <!--Hidden Content -->
+          <ol class="list-group list-group-numbered">Here's a list of weather instruments:
+            <li class="list-group-item d-flex justify-content-between align-items-start"> <!--List of instruments -->
+              <div class="ms-2 me-auto">
+                <div class="fw-bold"> Thermometer</div>
+                A thermometer measures the temperature over a 24-hour period.
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Stevenson Screen</div>
+                These shelters contain the thermometers. This is because temperature needs to be measured in the shade and the thermometer is protected and raised off the ground.
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Rain Gauge</div>
+                his measures the amount of precipitation that has fallen in a 24-hour period.
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </li>
+            <span class="badge bg-primary rounded-pill"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold"> Anemometer</div>
+              An anemometer measures wind speed in miles or km per hour.Using these tools and a variety of methods, weather forecasters and meteorologists are able to predict future weather. This enables us to plan and prepare accordingly, so that we're not negatively impacted by weather conditions.
+            </div>
+            <span class="badge bg-primary rounded-pill"></span>
+          </li>
+          </ol>
+        </div>
+          <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#extraContent2" aria-expanded="false" aria-controls="extraContent" id="toggleButton">
+            Read More
+          </button>
+      </div>
+      
+
+      <div class="card">
+        <div class="card-image weather3"></div>
+        <h2> Climates around the world </h2>       <!--other Climates -->
+        <p>Weather refers to the day to day conditions and changes in the atmosphere. Climate refers to the average weather conditions of a place over a long period of time.No two places on Earth have exactly the same climate. Nevertheless, many climates are similar to one another. </p> <br>
+          
+        <div class="collapse" id="extraContent3">  <!--Hidden Content -->
+        <ol class="list-group list-group-numbered">Climates around the world
+            <li class="list-group-item d-flex justify-content-between align-items-start">  <!--List of  different climates -->
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Tropical</div>
+                Tropical climates are warm all year and have no winter. They lie near the Equator. Some tropical climates have a lot of rain while others are dry.
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Temperate</div>
+                Temperate climates are found mostly north of the Equator. In these climates, cold air from the north mixes with warm tropical air from the south. This mixing often causes rain and snow. Temperate climates usually have warmer summers and colder winters.
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Polar</div>
+                Polar climates are very cold. Snow and ice often cover the land. Some polar areas always have a layer of frost, called permafrost, below the soil.
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </li>
+            <span class="badge bg-primary rounded-pill"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold"> Highland</div>
+              Highland climates have a great range of temperature between day and night. They tend to be humid and cooler than the lower lands nearby. </p>
+            </div>
+            <span class="badge bg-primary rounded-pill"></span>
+          </li>
+          </ol>
+        </div>
+        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#extraContent3" aria-expanded="false" aria-controls="extraContent" id="toggleButton">
+          Read More
+        </button>
+      </div>
+
+    </section>
+  
+
+    <Footer />  <!--Footer component at bootom of page -->
+
+    <!--JavaScript for Hamburger Menu  -->
+    <script>
+      document.querySelector('.hamburger')?.addEventListener('click', () => {
+        document.querySelector('.nav-links')?.classList.toggle('expanded');
+      });
+    </script>
+
+
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">  /*Bootstrap bundle to allow for JS functionality */
+</script>
+
+<script type="module">
+  import "../scripts/menu"; </script>
+  
+</body>
+</html>
